@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>ex1</title>
+	</head>
+<body>
+	<table>
+		<form>
+			<tr>
+				<th>Title:*</th>
+				<th>Short Title:*</th>
+				<th>Subj.:</th>
+				<th>Num.:</th>
+				<th>Section:</th>
+				<th>Year:</th>
+			</tr>
+			<tr>
+				<td> <input value="Astronomy for Poets" type="text" name="title" required/> </td>
+				<td>  <input value="Astr. for Poets" type="text" name="short"> </td>
+				<td>BLST</td>
+				<td>  <input value="10" type="text" name="num"> </td>
+				<td>  <input value="01" type="text" name="section"> </td>
+				<td>0910</td>
+		</form>
+	</table>
+	<table border="1" bgcolor="E8F2F3" cellspacing="0">
+		<form>
+			<tr>
+				<td><input type="checkbox" name="info" value="enrollement"> Enrollement limit </td>
+				<th>Num.: <br/> <input type="text" name="num"> </th>
+				<td><b>Rationale:</b> <br/> <input type="text" name="num"> </td>
+				<td rowspan="7"><b>Class Meeting/Week:</b> <br/>
+					<select name="meeting">
+  						<option value="1">1</option>
+  						<option value="2">2</option>
+  						<option value="3">3</option>
+ 						<option value="4">4</option>
+					</select> <br/>
+					<b>Class Hours/Week:</b> <br/>
+					<select name="hours">
+						<option value="0">0</option>
+  						<option value="1">1</option>
+  						<option value="2">2</option>
+  						<option value="3">3</option>
+ 						<option value="4">4</option>
+					</select> <br/>
+					<b>Semester(s) Offered:</b> <br/>
+					<select name="semester">
+						<option value="none">- NONE -</option>
+  						<option value="1">1</option>
+  						<option value="2">2</option>
+  						<option value="3">3</option>
+ 						<option value="4">4</option>
+					</select> <br/>
+					<input type="checkbox" name="Offered" value="1" checked> Incl. semester in prereqs. <br/>
+					<input type="checkbox" name="Offered" value="2"> Offered only once <br/>
+					<input type="checkbox" name="Offered" value="3"> Incl. in printed <br/>
+				</td>
+				<td rowspan="7"><b>Keywords:</b> <br/><br/>
+					<input type="checkbox" name="keywords" value="1"> Science for non-majors <br/>
+					<input type="checkbox" name="keywords" value="2"> Fine arts for non-majors <br/>
+					<input type="checkbox" name="keywords" value="3"> Lab science course <br/>
+					<input type="checkbox" name="keywords" value="4"> Artistic practice <br/>
+					<input type="checkbox" name="keywords" value="5"> Foreign language/culture taught in English <br/>
+					<input type="checkbox" name="keywords" value="6"> Community based learning <br/>
+					<input type="checkbox" name="keywords" value="7"> Writing attentive <br/>
+					<input type="checkbox" name="keywords" value="8"> Writting intensive <br/>
+				</td>
+			</tr>
+			<tr>
+				<td> <input type="checkbox" name="info" value="consetrequired"> Consent required </td>
+				<td></td>
+				<td><b>Rationale:</b> <br/> <input type="text" name="num"> </td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="info" value="limitclass"> Limit class level </td>
+				<th>Code: <br/> <input type="text" name="num"> </th>
+				<td><b>Rationale:</b> <br/> <input type="text" name="num"> <br><br>
+					<b>How to handle over-enrollment:</b> <br/> <input type="text" name="num">
+				</td>
+			</tr>
+			<tr>
+				<td rowspan=3> <input type="checkbox" name="info" value="prerequisite"> Prerequisite </td>
+				<td></td>
+				<td><b>Rationale:</b> <br/> <input type="text" name="num"><br/><br>
+				<b>Required Prereqs. (major, coruse):</b> <br/> <input type="text" name="num"><br/><br>
+				<b>Recommended Prereqs.:</b> <br/> <input type="text" name="num"> </td>
+			</tr>
+		</form>
+	</table>
+	<table>
+		<tr>
+			<th>Approvals:</th>
+			<th>Date:</th>
+			<th>Comment:</th>
+		</tr>
+		<tr>
+			<td> <input type="checkbox" name="approvals" value="CEP"> CEP </td>
+			<td><input type="date" name="date"> </td>
+			<td><input type="text" name="date"> </td>
+		</tr>
+		<tr>
+			<td> <input type="checkbox" name="approvals" value="comittee"> Committee of Six </td>
+			<td><input type="date" name="date"> </td>
+			<td><input type="text" name="date"> </td>
+		</tr>
+		<tr>
+			<td> <input type="checkbox" name="approvals" value="faculty"> Faculty </td>
+			<td><input type="date" name="date"> </td>
+			<td><input type="text" name="date"> </td>
+		</tr>
+	</table>
+</body>
+</html>

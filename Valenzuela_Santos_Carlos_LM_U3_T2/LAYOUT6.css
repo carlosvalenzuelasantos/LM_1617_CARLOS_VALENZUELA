@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    align-items: center;
+    position: absolute;
+}
+
+.white {
+    color: white;
+}
+
+.bgcolor {
+    background-color: red;
+    height: 180px;
+    width: 300px;
+    padding-top: 25%;
+}
+
+#bgimage {
+    height: 400px;
+    width: 100%;
+    background-image: url("rsc/img/bg.png");
+}
+
+.grey {
+    color: darkgray;
+    height: 180px;
+    width: 300px;
+}
+
+.content2 {
+    float: left;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.content1 {
+    float: left;
+}
+
+#text {
+    float: left;
+    position: relative;
+}
+
+#margin {
+    float: left;
+    position: relative;
+}
+
+#fright {
+    float: right;
+    position: relative;
+}
+
+.subcontainer {
+    text-align: center;
+    margin-left: 12%;
+}
+
+#product {
+    padding-left: 5%;
+    padding-top: 10%;
+}
+
+.image {
+    float: left;
+    position: relative;
+}
+
+p.left {
+    text-align: left;
+}
