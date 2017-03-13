@@ -1,0 +1,87 @@
+<!--
+    Author: Juan Diego Pérez @pekechis
+    E-mail: contact@jdperez.es
+    Description: Template for jQuery Exercises
+    Date: December 2016
+    Reference: http://api.jquery.com/
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>jQuery Template</title>
+	<!-- Loading jQUery Script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./galeria.css">
+</head>
+
+<body>
+
+	<h1>Historia de Ford Mustang</h1>
+	<div id="container">
+		<div class="flechas">
+			<div id="derecha">
+				<img src="img/right.png">
+			</div>
+			<div id="izquierda">
+				<img src="img/left.png">
+			</div>
+		</div>
+
+
+		<div id="mustang">
+			<div class="coche visible">
+				<img src="img/01_ford-Mustang-Cobra-II-1976.jpg">
+			</div>
+			<div class="coche">
+				<img src="img/02_ford-Mustang-2005.jpg">
+			</div>
+			<div class="coche">
+				<img src="img/03_ford-Mustang-GT500-2008.jpg">
+			</div>
+			<div class="coche">
+				<img src="img/04_ford-mustang-shelby-gt500-cobra-2013.jpg">
+			</div>
+			<div class="coche">
+				<img src="img/05_ford-mustang-2014.jpg">
+			</div>
+
+
+		</div>
+	</div>
+
+
+	<script>
+		//Function executed when the HTML document is Ready (full loaded)
+    $(function() {
+		$("div.coche").css ({opacity: 0});
+		$("div.coche").first().css({opacity: 1})
+
+		$("div.flechas > div#derecha").click (function() {
+			if ($("div.visible").next(".coche").length != 0) {
+					$("div.visible").animate({
+						opacity: 0,
+					}, 1500).removeClass("visible").next("div.coche").addClass("visible").animate({
+						opacity: 1,
+					}, 1500);
+				}
+				});
+
+
+			$("div.flechas > div#izquierda").click (function() {
+				if ($("div.visible").prev(".coche").length != 0) {
+						$("div.visible").animate({
+							opacity: 0,
+						}, 1500).removeClass("visible").prev("div.coche").addClass("visible").animate({
+							opacity: 1,
+						}, 1500);
+					}
+				});
+		});
+	</script>
+
+</body>
+
+</html>

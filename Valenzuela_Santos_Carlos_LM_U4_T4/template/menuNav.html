@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>MY FAVORITE GROUPS</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./menuNav.css">
+</head>
+
+<body>
+
+	<h1>MY FAVORITE GROUPS</h1>
+	<div id="container">
+		<nav>
+			<div class="grupo">
+				<h1>Deftones</h1>
+				<nav>
+					<div class="disco">
+						<h3>Adrenaline</h3>
+						<nav>
+
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+
+						</nav>
+					</div>
+					<div class="disco">
+						<h3>Around The Fur</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+						</nav>
+					</div>
+					<div class="disco">
+						<h3>White Pony</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+						</nav>
+					</div>
+					<div class="disco">
+						<h3>Saturday Night Wrist</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+					</div>
+
+				</nav>
+			</div>
+
+
+			<div class="grupo">
+				<h1>Korn</h1>
+				<nav>
+					<div class="disco">
+						<h3>Life is Peachy</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+						</nav>
+					</div>
+					<div class="disco">
+						<h3>Follow the Leader</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+						</nav>
+					</div>
+					<div class="disco">
+						<h3>Issues</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+						</nav>
+					</div>
+					<div class="disco">
+						<h3>Untouchables</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+						</nav>
+					</div>
+
+				</nav>
+			</div>
+
+
+			<div class="grupo">
+				<h1>Cypress Hill</h1>
+				<nav>
+					<div class="disco">
+						<h3>Greatest Hits From The Bong</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+						</nav>
+					</div>
+					<div class="disco">
+						<h3>Los Grandes Exitos en Español</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+						</nav>
+					</div>
+					<div class="disco">
+						<h3>Black Sunday</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+						</nav>
+					</div>
+					<div class="disco">
+						<h3>Skull and Bones</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+						</nav>
+					</div>
+				</nav>
+			</div>
+
+
+			<div class="grupo">
+				<h1>Rage Against the Machine</h1>
+				<nav>
+					<div class="disco">
+						<h3>Evil Empire</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+						</nav>
+					</div>
+					<div class="disco">
+						<h3>The Battle of Los Angeles</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+						</nav>
+					</div>
+					<div class="disco">
+						<h3>Renegades</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+						</nav>
+					</div>
+					<div class="disco">
+						<h3>Live at the Grand Olympic Auditorium</h3>
+						<nav>
+							<div class="cancion">1</div>
+							<div class="cancion">2</div>
+							<div class="cancion">3</div>
+						</nav>
+					</div>
+
+				</nav>
+			</div>
+
+	</div>
+
+
+
+
+
+
+
+
+	<script>
+	$(function() {
+
+		$(".disco").hide();
+		$(".cancion").hide();
+
+		$(".grupo").mouseenter(function() {
+			$(this).children().children(".disco").show();
+		});
+
+		$(".grupo").mouseleave(function() {
+			$(this).children().children(".disco").hide();
+		});
+
+		$(".disco").mouseenter(function() {
+			$(this).children().children(".cancion").show()
+		});
+
+		$(".disco").mouseleave(function() {
+			$(this).children().children(".cancion").hide()
+		});
+	});
+</script>
+
+</body>
+
+</html>

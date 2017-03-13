@@ -1,0 +1,58 @@
+body {
+  background-image: url('img/fondo.jpg');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  width: 85%;
+  height: 450px;
+  background-color: red;
+  margin: 10px auto;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+  .grupo {
+    float: left;
+    width: 22%;
+    cursor: pointer;
+  }
+
+.disco {
+    background-color: yellow;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    width: 60%;
+    border: 1px solid black;
+}
+
+.disco nav {
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  width: 220px;
+}
+
+.disco nav div {
+  float: left;
+  padding: 10px;
+}
+
+.cancion {
+
+    background-color: green;
+    float: left;
+    padding: 10px;
+    border-top: 40px;
+    border: 1px solid black;
+    width: 100px;
+
+}
+
+.disco nav {
+  width: 300px;
+}

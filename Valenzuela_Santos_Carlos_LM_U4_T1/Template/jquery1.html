@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Template</title>
+	<!-- Loading jQUery Script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet"href="jquery1.css"
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<h1>jQuery Template</h1>
+
+	<table id="horario" border=1>
+		<thead>
+			<tr>
+				<th>HORAS</th>
+				<th>Lunes</th>
+				<th>Martes</th>
+				<th>Miercoles</th>
+				<th>Jueves</th>
+				<th>Viernes</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>8:15-9:15</th>
+				<td>LMSGI</td>
+				<td>FOL</td>
+				<td>LMSGI</td>
+				<td>PLDRE</td>
+				<td>GBDIN</td>
+			</tr>
+			<tr>
+				<th>9:15-10:15</th>
+				<td>LMSGI</td>
+				<td>PLDRE</td>
+				<td>LMSGI</td>
+				<td>PLDRE</td>
+				<td>GBDIN</td>
+			</tr>
+			<tr>
+				<th>10:15-11:15</th>
+				<td>FOL</td>
+				<td>PLDRE</td>
+				<td>FOL</td>
+				<td>PLDRE</td>
+				<td>GBDIN</td>
+			</tr>
+			<tr>
+				<th>11:15-11:45</th>
+				<th colspan=5>RECREO</th>
+			</tr>
+			<tr>
+				<th>11:45-12:45</th>
+				<td>GBDIN</td>
+				<td>PLDRE</td>
+				<td>INSINF</td>
+				<td>ISOAP</td>
+				<td>FHADW</td>
+			</tr>
+			<tr>
+				<th>12:45-13:45</th>
+				<td>GBDIN</td>
+				<td>ISINF</td>
+				<td>ISINF</td>
+				<td>ISINF</td>
+				<td>FHADW</td>
+			</tr>
+			<tr>
+				<th>13:45-14:45</th>
+				<td>GBDIN</td>
+				<td>ISINF</td>
+				<td>ISINF</td>
+				<td>ISINF</td>
+				<td>FHADW</td>
+			</tr>
+		</tbody>
+	</table>
+	</body>
+</html>
+
+<br>
+
+
+<table id="alumnos"border=1>
+	<thead>
+		<tr>
+			<th>NOMBRE</th>
+			<th>APELLIDOS</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>Carlos</td>
+			<td>Valenzuela</td>
+		</tr>
+		<tr>
+			<td>Carlos</td>
+			<td>Valenzuela</td>
+		</tr>
+		<tr>
+			<td>Carlos</td>
+			<td>Valenzuela</td>
+		</tr>
+		<tr>
+			<td>Carlos</td>
+			<td>Valenzuela</td>
+		</tr>
+		<tr>
+			<td>Carlos</td>
+			<td>Valenzuela</td>
+		</tr>
+		<tr>
+			<td>Carlos</td>
+			<td>Valenzuela</td>
+		</tr>
+		<tr>
+			<td>Carlos</td>
+			<td>Valenzuela</td>
+		</tr>
+		<tr>
+			<td>Carlos</td>
+			<td>Valenzuela</td>
+		</tr>
+		<tr>
+			<td>Carlos</td>
+			<td>Valenzuela</td>
+		</tr>
+		<tr>
+			<td>Carlos</td>
+			<td>Valenzuela</td>
+		</tr>
+
+	</tbody>
+</table>
+<br>
+<p class="show">
+	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+</p>
+<br>
+<p>
+	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+</p>
+<br>
+<p>
+	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+</p>
+<br>
+<p>
+	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+</p>
+
+</body>
+</html>
+
+	<script>
+	  //Function executed when the HTML document is Ready (full loaded)
+	  $(function() {
+			$( "h1" ).addClass( "cabecera" );
+			$( "#horario thead" ).css({"color": "white","background-color":"red"})
+      $( "#alumnos tr:even" ).addClass( "impares" );
+			$( "#alumnos tr:odd" ).addClass( "pares" );
+      $("p:not(.show)").hide();
+
+
+	  });
+	</script>
+
+</body>
+</html>
